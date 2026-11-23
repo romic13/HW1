@@ -6,8 +6,13 @@ public class Assignment01Q02 {
         /////////////////////////////////////////////
         // TODO: Fill in the Pi approxiamtion here
         /////////////////////////////////////////////
-        /// ...
-        
+        int n = Integer.parseInt(args[0]);
+        double sum = 0;
+        for (int i = 0; i < n; i++) {   
+            double term = Math.pow(-1, i) / (2 * i + 1);
+            sum += term;
+        }
+        approxPi = 4 * sum;
         
         /////////////////////////////////////////////
         
