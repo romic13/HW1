@@ -9,7 +9,7 @@ public class Assignment01Q05 {
             dist[k] = -1;
         }
 
-        int [] queue = new int[n];
+        int[] queue = new int[n];
         int head = 0;
         int tail = 0;
         dist[i] = 0;
