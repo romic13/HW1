@@ -5,12 +5,12 @@ public class Assignment01Q04 {
     public static int[] shiftArrayCyclic(int[] array, int move, char direction) {
         int n = array.length;
         if (n == 0 || (direction != 'L' && direction != 'R')) {
-            return array; // Return the original array if it's empty or direction is invalid
+            return array;
         }
         if (direction == 'L') {
-            move = (move % n + n) % n; // Normalize move for left shift
+            move = (move % n + n) % n;
         } else if (direction == 'R') {
-            move = (n - (move % n + n) % n) % n; // Normalize move for right shift
+            move = (n - (move % n + n) % n) % n;
         }
                 int[] copy = new int[n];
         for (int i = 0; i < n; i++) {
