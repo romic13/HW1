@@ -12,9 +12,9 @@ public class Assignment01Q04 {
         } else if (direction == 'R') {
             move = (n - (move % n + n) % n) % n;
         }
-                int[] copy = new int[n];
+            int[] copy = new int[n];
         for (int i = 0; i < n; i++) {
-        copy[i] = array[i];
+         copy[i] = array[i];
         }
         for (int i = 0; i < n; i++) {
             array[i] = copy[(i + move) % n];
