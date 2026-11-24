@@ -4,9 +4,9 @@ public class Assignment01Q05 {
             return 0;
         }
         int n = m.length;
-        int [] dist = new int[n];
+        int[] dist = new int[n];
         for (int k=0; k<n; k++) {
-            dist [k] = -1;
+            dist[k] = -1;
         }
 
         int [] queue = new int[n];
